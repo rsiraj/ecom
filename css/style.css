@@ -21,6 +21,10 @@ img {
   height: auto;
 }
 
+.text-main {
+  color: var(--mainColor) !important;
+}
+
 .btn-main {
   background: var(--mainColor) !important;
   color: #fff !important;
@@ -43,6 +47,7 @@ header {
   top: 0px;
   width: 100%;
   z-index: 10;
+  background: #fff;
 }
 
 nav {
@@ -82,4 +87,28 @@ nav {
 .hero-action-btn a:last-child {
   margin-left: 1rem;
   font-weight: bold;
+}
+
+.best-sellers {
+  padding: 1.5rem 0rem;
+}
+
+.section-info {
+  text-align: center;
+  padding: 0rem 2rem;
+  margin: 1rem 0rem;
+}
+.section-info h3 {
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+.section-info p {
+  color: #505050;
+  line-height: 1.3rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
