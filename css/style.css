@@ -294,6 +294,10 @@ nav {
 }
 
 @media only screen and (min-width: 768px) {
+  .wrapper.full-screen {
+    padding: 0rem;
+  }
+
   header {
     position: relative;
     left: 0;
@@ -332,5 +336,70 @@ nav {
 
   .product-grid {
     grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+
+  .is-mobile-menu,
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    height: 60vh;
+    overflow: hidden;
+  }
+  .hero-content {
+    max-height: 60vh;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .hero-content h4 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.9rem;
+  }
+  .hero-image {
+    display: inline-block;
+    position: relative;
+  }
+  .hero-image img {
+    position: absolute;
+    bottom: 0;
+    width: 65%;
+  }
+  .hero-action-btn a:first-child {
+    margin-left: 0rem;
+  }
+  .hero-action-btn a {
+    font-size: 1.3rem;
+  }
+
+  .training-articles {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .training-article-img {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1124px) {
+  .wrapper {
+    width: 70%;
+    margin: auto;
+  }
+  .wrapper.full-screen {
+    width: 100%;
   }
 }
