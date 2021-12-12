@@ -238,6 +238,10 @@ nav {
   text-decoration: underline;
 }
 
+.mobile-contact-section {
+  padding-bottom: 0.5rem;
+}
+
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -256,4 +260,77 @@ nav {
 }
 .feature-info {
   flex: 1;
+}
+.feature-info h5 {
+  font-size: 0.9rem;
+  color: #333;
+}
+.feature-info p {
+  font-size: 0.85rem;
+  color: #505050;
+}
+
+.mobile-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0.8rem 0rem;
+}
+.mobile-contact > div {
+  margin: 0.5rem 0rem;
+}
+.mobile-contact > div > span {
+  font-size: 0.9rem;
+}
+.mobile-social-links span {
+  font-size: 1.3rem;
+  margin: 0rem 0.5rem;
+  color: var(--mainColor);
+}
+
+.footer-bottom {
+  padding: 1rem 0rem 2rem 0rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .sub-nav {
+    display: block;
+  }
+  .sub-nav-top {
+    background: #272727;
+  }
+  .sub-nav-top ul {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-nav-top li {
+    margin: 0rem 1rem;
+  }
+  .sub-nav-top a {
+    color: #fff;
+  }
+  .sub-nav-bottom-links {
+    display: flex;
+    justify-content: center;
+  }
+  .sub-nav-bottom-links > a {
+    display: inline-block;
+    color: #505050;
+    margin: 0rem 1rem;
+  }
+
+  .hero {
+    margin-top: 0rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
