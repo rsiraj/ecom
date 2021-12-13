@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
     <link rel="stylesheet" href="style.css">
-    <title>Ecommerce Project</title>
+    <title>Home | Ecommerce Project</title>
 </head>
 
 <body>
     <header>
         <div class="wrapper">
-            <nav>
+            <nav>  <!-- Main Nav on top of page (needs JS functionality) -->
                 <div class="menu-toggle">
                     <span class="ti-menu"></span>
                         <span class="ti-search"></span>
                 </div>
                 <div class="brand">
-                    <h2>Shopname</h2>
+                    <h2>Shopname</h2> 
                 </div>
                 <div class="cart">
                     <span class="ti-shopping-cart"></span>
@@ -27,7 +27,7 @@
             </nav>
         </div>
 
-        <section class="sub-nav">
+        <section class="sub-nav"> <!-- Nav that disappears until vw is 768px -->
             <div class="sub-nav-top">
                 <div class="wrapper">
                     <ul>
@@ -54,7 +54,7 @@
     <main>
         <div class="wrapper full-screen hero-bg">
             <section class="hero">
-                <div class="hero-content">
+                <div class="hero-content"> <!--- Hero --->
                     <h4>Men's <span class="text-main">Skincare</span> <br> Simplified</h4>
                     <p>Global Leader in Men's Skin <br> & Body care since 2000</p>
                     <div class="hero-action-btn">
@@ -62,13 +62,13 @@
                         <a href="" class="btn-secondary-outline">Free Advice</a>
                     </div>
                 </div>
-                <div class="hero-image">
+                <div class="hero-image"> <!--- Hero Image, doesnt appear until vw is 960px --->
                     <img src="img/1.png" alt="Man with invisible background">
                 </div>
             </section>
         </div>
         <div class="wrapper">
-            <section class="best-sellers">
+            <section class="best-sellers"> <!--- Product section with grid --->
                 <div class="section-info">
                     <h3>Best Sellers</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus cupiditate asperiores ullam</p>
@@ -118,7 +118,7 @@
             </section>
         </div>
 
-        <section class="training bg-secondary">
+        <section class="training bg-secondary"> <!--- Article Section --->
             <div class="wrapper">
                 <div class="section-info">
                     <h3>Need Help?</h3>
@@ -153,7 +153,7 @@
             </div>
         </section>
 
-        <section class="features-section bg-white">
+        <section class="features-section bg-white"> <!--- Shop Selling Points Section --->
             <div class="wrapper">
                 <div class="section-info">
                     <h3>Amazing Features</h3>
@@ -199,8 +199,10 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <section class="mobile-contact-section bg-secondary">
+    <footer>
+        <section class="mobile-contact-section bg-secondary"> <!--- Footer with contact --->
             <div class="wrapper">
                 <div class="section-info">
                     <h3>Need Help?</h3>
@@ -223,17 +225,15 @@
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="footer-bottom">
+        <div class="footer-bottom"> <!--- Copyright --->
             <small>&copy; All rights reserved. Shopname 2021.</small>
         </div>
     </footer>
 
     <div class="is-mobile-menu"></div>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu"> <!--- Mobile Menu at bottom of screen. Disappears at vw 768px --->
         <div class="menu-item">
             <span class="ti-home"></span>
             <p>Home</p>

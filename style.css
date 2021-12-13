@@ -294,7 +294,7 @@ nav {
   padding: 1rem 0rem 2rem 0rem;
   text-align: center;
 }
-
+/*----------------------Media Queries (768px)----------------------*/
 @media only screen and (min-width: 768px) {
   .wrapper.full-screen {
     padding: 0rem;
@@ -343,13 +343,16 @@ nav {
   .product {
     margin-bottom: 1rem;
   }
+  .product-img {
+    height: 200px;
+  }
 
   .is-mobile-menu,
   .mobile-menu {
     display: none;
   }
 }
-
+/*----------------------Media Queries (960px)----------------------*/
 @media only screen and (min-width: 960px) {
   .hero {
     grid-template-columns: repeat(2, 1fr);
@@ -384,6 +387,10 @@ nav {
   }
   .hero-action-btn a {
     font-size: 1.3rem;
+  }
+
+  .product-img {
+    height: 250px;
   }
 
   .training-articles {
@@ -424,7 +431,7 @@ nav {
     margin: 0rem 1rem;
   }
 }
-
+/*----------------------Media Queries (1124px)----------------------*/
 @media only screen and (min-width: 1124px) {
   .wrapper {
     width: 70%;
@@ -440,5 +447,8 @@ nav {
 
   .product-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .product-img {
+    height: 300px;
   }
 }
