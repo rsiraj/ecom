@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>  <!-- Main Nav on top of page (needs JS functionality) -->
+                <div class="menu-toggle">
+                    <span class="ti-menu"></span>
+                        <span class="ti-search"></span>
+                </div>
+                <div class="brand">
+                    <h2>Shopname</h2> 
+                </div>
+                <div class="cart">
+                    <span class="ti-shopping-cart"></span>
+                    <span class="cart-count"><span class="text-main">0</span></span>
+                </div>
+            </nav>
+        </div>
+
+        <section class="sub-nav"> <!-- Nav that disappears until vw is 768px -->
+            <div class="sub-nav-top">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Track</a></li>
+                        <li><a href="">Order</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sub-nav-bottom">
+                <div class="wrapper">
+                    <div class="sub-nav-bottom-links">
+                        <a href="">Free Shipping</a> |
+                        <a href="">Fast Delivery</a> |
+                        <a href="">Free Returns</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <div class="wrapper full-screen product-main">
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/);"></div>
+                </div>
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-next swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url(/img/);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/);"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <section class="mobile-contact-section bg-secondary"> <!--- Footer with contact --->
+            <div class="wrapper">
+                <div class="section-info">
+                    <h3>Need Help?</h3>
+                    <div class="mobile-contact">
+                        <div class="mobile-phone">
+                            <span class="ti-mobile"></span>
+                            <span>(704)123-4567</span>
+                        </div>
+                        <div class="mobile-mail">
+                            <span class="ti-email"></span>
+                            <span>help@plantssale.com</span>
+                        </div>
+                    <div class="mobile-social-links">
+                        <a href=""><span class="ti-facebook"></span></a>
+                        <a href=""><span class="ti-instagram"></span></a>
+                        <a href=""><span class="ti-twitter"></span></a>
+                        <a href=""><span class="ti-youtube"></span></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="footer-bottom"> <!--- Copyright --->
+            <small>&copy; All rights reserved. Shopname 2021.</small>
+        </div>
+    </footer>
+
+    <div class="is-mobile-menu"></div>
+
+    <div class="mobile-menu"> <!--- Mobile Menu at bottom of screen. Disappears at vw 768px --->
+        <div class="menu-item">
+            <span class="ti-home"></span>
+            <p>Home</p>
+        </div>
+        <div class="menu-item">
+            <span class="ti-folder"></span>
+            <p>Products</p>
+        </div>
+        <div class="menu-item">
+            <span class="ti-user"></span>
+            <p>Track</p>
+        </div>
+        <div class="menu-item">
+            <span class="ti-info"></span>
+            <p>Help</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</body>
+</html>
