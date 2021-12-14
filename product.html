@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7.3.2/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Product Page</title>
 </head>
@@ -52,22 +52,83 @@
     </header>
 
     <main>
-        <div class="wrapper full-screen product-main">
+        <div class="product-images">
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
-                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
-                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
                 </div>
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-next swiper-button-white"></div>
             </div>
+
             <div class="swiper-container gallery-thumbs">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
-                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
-                    <div class="swiper-slide" style="background-image: url(/img/bg.jpeg);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
+                    <div class="swiper-slide" style="background-image: url(/img/prod7.png);"></div>
                 </div>
+            </div>
+        </div>
+
+        <div class="wrapper full-screen product-description">
+            <h3>Beautiful low maintenance houseplant</h3>
+            <p><small class="sale bg-main">SALE</small><span class="price text-main">$29.99</span></p>
+            <p class="short-describe">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            <div class="variations color">
+                <h4>COLOR</h4>
+                <label for="" class="product-color">
+                    <input type="radio" name="color" checked id="">
+                    <span></span>
+                </label>
+                <label for="" class="product-color">
+                    <input type="radio" name="color" id="">
+                    <span></span>
+                </label>
+                <label for="" class="product-color">
+                    <input type="radio" name="color" id="">
+                    <span></span>
+                </label>
+                <label for="" class="product-color">
+                    <input type="radio" name="color" id="">
+                    <span></span>
+                </label>
+            </div>
+            <div class="variations sizes">
+                <h4>SIZE</h4>
+                <label for="" class="product-size">
+                   S <input type="radio" name="size" checked id="">
+                   <span></span>
+                </label>
+                <label for="" class="product-size">
+                   M <input type="radio" name="size" id="">
+                   <span></span>
+                </label>
+                <label for="" class="product-size">
+                   L <input type="radio" name="size" id="">
+                   <span></span>
+                </label>
+                <label for="" class="product-size">
+                   XL <input type="radio" name="size" id="">
+                   <span></span>
+                </label>
+            </div>
+
+            <div class="product-action-button">
+                <div class="quantity-controls">
+                    <button>-</button>
+                    <input type="number" readonly>
+                    <button>+</button>
+                </div>
+                <div class="tocart-control">
+                    <button class="btn-main">
+                        <span class="ti-shopping-cart"></span>
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+
+            <div class="long-describe">
+                
             </div>
         </div>
 
@@ -125,7 +186,23 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/swiper@7.3.2/swiper-bundle.min.js"></script>
+    <!-- <script src="/js/main.js"></script> -->
+    <script type="module">
+        import Swiper from 'swiper/swiper-bundle.esm.js';
+        import 'swiper/swiper-bundle.css';
+        let galleryThumbs = new Swiper('.gallery-thumbs', {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        let galleryTop = new Swiper('.gallery-top', {
+          spaceBetween: 10,
+          thumbs: {
+            swiper: galleryThumbs
+          }
+        });
+      </script>
 </body>
 </html>
