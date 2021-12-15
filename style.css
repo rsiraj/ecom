@@ -150,6 +150,9 @@ nav {
   color: #505050;
   line-height: 1.3rem;
 }
+.footer-logo img {
+  width: 100px;
+}
 
 .product-grid {
   display: grid;
