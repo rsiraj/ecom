@@ -3,20 +3,13 @@
   --greyColor: #f6f6f6;
 }
 
-@font-face {
-  font-family: 'gt_walsheim_proregular';
-  src: url('gtwalsheimpro-regular-webfont.woff2') format('woff2'),
-       url('gtwalsheimpro-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "GT Walsheim Pro", "gt_walsheim_proregular", sans-serif;
+  font-family: "GT Walsheim Pro", sans-serif;
 }
 
 .wrapper {

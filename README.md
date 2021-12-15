@@ -1,5 +1,7 @@
 # ecom
 
+Please install fonts in 'font' folder before viewing
+
 Road to Hire - Ecommerce Project Version 1
 
 Requirements
