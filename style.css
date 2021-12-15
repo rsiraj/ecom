@@ -88,7 +88,7 @@ nav {
 }
 
 .hero-bg {
-  background-image: linear-gradient(#0000004d, #357960cc), url(/img/bg.jpeg);
+  background-image: linear-gradient(#0000004d, #357960cc), url(/img/heroBg.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -536,7 +536,8 @@ nav {
   }
   .hero-image img {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
+    right: 0px;
     width: 65%;
   }
   .hero-action-btn a:first-child {
