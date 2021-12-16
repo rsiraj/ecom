@@ -107,7 +107,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   height: 35vh;
-  min-height: 210px;
+  min-height: 220px;
 }
 
 .hero-content {
@@ -139,6 +139,14 @@ nav {
 
 .best-sellers {
   padding: 1.5rem 0rem;
+}
+
+.page-construction {
+  margin-top: 4rem;
+  background-size: contain;
+  background-repeat: space;
+  height: 20vh;
+  min-height: 300px;
 }
 
 .section-info {
@@ -276,13 +284,13 @@ nav {
 .features {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5rem 1rem;
+  grid-gap: 1.2rem 1rem;
 }
 .feature {
   display: flex;
   border-radius: 7px;
   padding: 0.5rem;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.3);
 }
 .feature-icon {
   font-size: 1.8rem;
@@ -323,7 +331,91 @@ nav {
   padding: 1rem 0rem 2rem 0rem;
   text-align: center;
 }
+/*----------------------Contact Page---------------------*/
 
+.contact {
+  padding: 5rem 10px;
+}
+
+.form-box {
+  width: 100%;
+  max-width: 500px;
+  margin: -20px auto;
+  padding: 2rem;
+  background-position: center center;
+  border: 1px solid var(--mainColor);
+  box-shadow: 1px 1px 3px dimgrey, 3px 3px 7px grey;
+}
+
+.form-box h2 {
+  text-transform: uppercase;
+  margin-bottom: 0.7rem;
+  font-size: 2rem;
+}
+
+.form-item {
+  margin-bottom: 0.7rem;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  outline-color: var(--mainColor);
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+input,
+textarea {
+  padding: 3px;
+  border: 1px solid var(--mainColor);
+  background-color: var(--greyColor);
+}
+
+input[type="submit"] {
+  background-color: var(--mainColor);
+  padding: 7px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+  animation-name: submit-hover;
+  animation-duration: 0.7s;
+}
+
+input[type="submit"]:active {
+  animation-name: submit-active;
+  animation-duration: 0.3s;
+}
+
+@keyframes submit-hover {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes submit-active {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
 /*----------------------Product Page---------------------*/
 .swiper-container.gallery-top {
   width: 100%;
