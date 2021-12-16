@@ -332,7 +332,6 @@ nav {
   text-align: center;
 }
 /*----------------------Contact Page---------------------*/
-
 .contact {
   padding: 5rem 10px;
 }
@@ -416,6 +415,7 @@ input[type="submit"]:active {
     transform: scale(0.98);
   }
 }
+
 /*----------------------Product Page---------------------*/
 .swiper-container.gallery-top {
   width: 100%;
