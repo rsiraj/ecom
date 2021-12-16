@@ -92,6 +92,9 @@ nav {
 .menu-item {
   color: black;
 }
+.brand {
+  margin-left: 1rem;
+}
 
 .hero-bg {
   background-image: linear-gradient(#ffffff41, #0000006c), url(/img/heroBg.jpeg);
@@ -104,6 +107,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   height: 35vh;
+  min-height: 210px;
 }
 
 .hero-content {
