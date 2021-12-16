@@ -12,6 +12,10 @@
   font-family: "GT Walsheim Pro", sans-serif;
 }
 
+.hidden-validation {
+  display: none;
+}
+
 .wrapper {
   padding: 1rem;
 }
