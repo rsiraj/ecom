@@ -98,7 +98,7 @@ nav {
 /*--------------------------Hero---------------------------*/
 /*--------------------------Hero---------------------------*/
 .hero-bg {
-  background-image: linear-gradient(#ffffff41, #0000006c), url(/img/heroBg.jpeg);
+  background-image: linear-gradient(#ffffff41, #0000006c), url(/img/heroBg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
